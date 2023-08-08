@@ -36,27 +36,27 @@ menuLinks.forEach((link) => {
 
 /* -- Copy function -- */
 
-function copyTextToClipboard(textToCopy) {
-  const tempInput = document.createElement("textarea");
-  tempInput.value = textToCopy;
-  document.body.appendChild(tempInput);
-  tempInput.select();
+// function copyTextToClipboard(textToCopy) {
+//   const tempInput = document.createElement("textarea");
+//   tempInput.value = textToCopy;
+//   document.body.appendChild(tempInput);
+//   tempInput.select();
 
-  tempInput.setSelectionRange(0, 99999);
-  navigator.clipboard.writeText(tempInput.value);
-  document.body.removeChild(tempInput);
+//   tempInput.setSelectionRange(0, 99999);
+//   navigator.clipboard.writeText(tempInput.value);
+//   document.body.removeChild(tempInput);
 
-  // Show a confirmation message or perform any other action
-  alert("Text copied to clipboard: " + textToCopy);
-}
+//   // Show a confirmation message or perform any other action
+//   alert("Text copied to clipboard: " + textToCopy);
+// }
 
-const parentContainer = document.body;
-parentContainer.addEventListener("click", function (event) {
-  if (
-    event.target.classList.contains("card-content") ||
-    event.target.parentElement.classList.contains("card-content")
-  ) {
-    const coptText = event.target.innerText;
-    copyTextToClipboard(coptText);
-  }
-});
+// const parentContainer = document.body;
+// parentContainer.addEventListener("click", function (event) {
+//   if (
+//     event.target.classList.contains("card-content") ||
+//     event.target.parentElement.classList.contains("card-content")
+//   ) {
+//     const coptText = event.target.innerText;
+//     copyTextToClipboard(coptText);
+//   }
+// });
