@@ -1,0 +1,4 @@
+User-Agent: *
+Disallow: /asset/docs/
+
+Sitemap: https://msuthar09.github.io/sitemap.txt
