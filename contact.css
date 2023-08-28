@@ -440,7 +440,7 @@ body.menu-toggled > #content > #menu-arcs-wrapper {
   font-size: clamp(2em, 4vmax, 4em);
 }
 
-#content > #menu-arcs-wrapper {
+/* #content > #menu-arcs-wrapper {
   height: clamp(600px, 200vmax, 6000px);
   left: 0px;
   opacity: 1;
@@ -468,7 +468,7 @@ body.menu-toggled > #content > #menu-arcs-wrapper {
   stroke: rgba(0, 0, 0, 0.5);
   stroke-dasharray: 2, 10;
   stroke-width: 1;
-}
+} */
 
 #content > #cards {
   display: grid;
@@ -588,7 +588,11 @@ fancy1 {
   }
 }
 
-@media (max-width: 600px) {
+@media (max-width: 500px) {
+  #menu > #menu-toggle > #menu-toggle-label {
+    display: none;
+  }
+
   #content {
     flex-direction: column;
     justify-content: flex-start;
