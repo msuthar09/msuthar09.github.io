@@ -7,7 +7,7 @@
             "runtimeArgs": [
                 "--remote-debugging-port=9222"
             ],
-            "url": "c:\\Users\\MaharshiSuthar\\source\\repos\\Website_Project\\msuthar09.github.io\\index.html", // Provide your project's url to finish configuring
+            "url": "c:\\Users\\mahar\\source\\repos\\msuthar09.github.io\\index.html", // Provide your project's url to finish configuring
             "presentation": {
                 "hidden": true
             }
@@ -20,7 +20,7 @@
                 "--headless",
                 "--remote-debugging-port=9222"
             ],
-            "url": "c:\\Users\\MaharshiSuthar\\source\\repos\\Website_Project\\msuthar09.github.io\\index.html", // Provide your project's url to finish configuring
+            "url": "c:\\Users\\mahar\\source\\repos\\msuthar09.github.io\\index.html", // Provide your project's url to finish configuring
             "presentation": {
                 "hidden": true
             }
@@ -29,7 +29,7 @@
             "type": "vscode-edge-devtools.debug",
             "name": "Open Edge DevTools",
             "request": "attach",
-            "url": "c:\\Users\\MaharshiSuthar\\source\\repos\\Website_Project\\msuthar09.github.io\\index.html", // Provide your project's url to finish configuring
+            "url": "c:\\Users\\mahar\\source\\repos\\msuthar09.github.io\\index.html", // Provide your project's url to finish configuring
             "presentation": {
                 "hidden": true
             }

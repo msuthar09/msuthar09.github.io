@@ -4,64 +4,191 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-  <title>Maharshi Portfolio Website</title>
+  <meta name="Keywords" content="HTML, CSS, GitHub, Personal Website, Contact, Social Media" />
+  <meta name="Description" content="Resume of Maharshi Suthar." />
+  <title>Portfolio | Maharshi</title>
   <!----CSS link----->
   <link rel="stylesheet" href="portfolio.css" />
+  <script type="text/javascript" src="https://kit.fontawesome.com/e513012476.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
-  <header>
-    <h1>Maharshi Suthar</h1>
-    <nav>
-      <ul>
-        <li><a href="#about">About</a></li>
-        <li><a href="#experience">Experience</a></li>
-        <li><a href="#skills">Skills</a></li>
-      </ul>
-    </nav>
-  </header>
+  <div id="menu">
+    <button type="button" id="menu-toggle">
+      <span class="line"></span>
+      <span class="line"></span>
+      <span class="line"></span>
+      <div id="menu-toggle-label">
+        <span class="word">DISCOVER</span>
+        <span class="word">MORE</span>
+      </div>
+    </button>
+    <a href="./asset/docs/Maharshi_Suthar_Resume.docx" download>
+      <button type="button" id="resume-button">
+        <span class="word">RESUME</span>
+        <i class="fa-solid fa-file-arrow-down"></i>
+      </button>
+    </a>
+    <div id="menu-gradient"></div>
+    <div id="menu-gradient-blur"></div>
+    <div id="menu-arcs-wrapper">
+      <svg id="menu-arcs">
+        <circle class="menu-arc" cx="50%" cy="50%" r="18%"></circle>
+        <circle class="menu-arc" cx="50%" cy="50%" r="30%"></circle>
+        <circle class="menu-arc" cx="50%" cy="50%" r="42%"></circle>
+      </svg>
+    </div>
+    <div id="menu-links">
+      <a class="link" href="index.html">
+        <span class="anchor"></span>
+        <span class="index">01</span>
+        <span class="label">Home</span>
+      </a>
+      <a class="link" href="portfolio.html">
+        <span class="anchor"></span>
+        <span class="index">02</span>
+        <span class="label">Portfolio</span>
+      </a>
+      <a class="link" href="project.html">
+        <span class="anchor"></span>
+        <span class="index">03</span>
+        <span class="label">Project</span>
+      </a>
+      <a class="link" href="contact.html">
+        <span class="anchor"></span>
+        <span class="index">04</span>
+        <span class="label">Contact</span>
+      </a>
+    </div>
+  </div>
 
-  <main>
-    <section id="about">
+  <div id="content">
+    <div id="portrait">
+      <img src="./asset/img/portrait.jpg" alt="Portrait" />
+    </div>
+
+    <div id="about">
       <h2>About Me</h2>
-      <p>Experienced Junior Cloud Developer with strong skills in Python, C#, Docker, Kubernetes, TypeScript, JavaScript, HTML/CSS, SQL, and Azure. Designed and developed self-service DevOps applications for automated actuarial code deployment and Python-based ETL pipelines for data processing and analysis. Proven ability to manage Docker and Kubernetes containers in production environments and develop CI/CD pipelines. Skilled in Git version control for collaborative software development. Demonstrated excellent communication skills and ability to work independently or in a team.</p>
-    </section>
+      <p>Experienced Junior Cloud Developer with strong skills in Python, C#, Docker, Kubernetes, TypeScript,
+        JavaScript, HTML/CSS, SQL, and Azure. Designed and developed self-service DevOps applications for automated
+        actuarial code deployment and Python-based ETL pipelines for data processing and analysis. Proven ability to
+        manage Docker and Kubernetes containers in production environments and develop CI/CD pipelines. Skilled in Git
+        version control for collaborative software development. Demonstrated excellent communication skills and ability
+        to work independently or in a team.</p>
+    </div>
 
-    <section id="experience">
+    <div id="skills">
+      <h2>Skills</h2>
+      <table>
+        <tr>
+          <th>Programming Language</th>
+          <th>Tools & Framework</th>
+          <th>Hosting / Cloud</th>
+          <th>Orchestration</th>
+          <th>Project Management</th>
+        </tr>
+        <tr>
+          <td>Python</td>
+          <td>VS Code</td>
+          <td>Azure</td>
+          <td>Kubernetes</td>
+          <td>Agile</td>
+        </tr>
+        <tr>
+          <td>C#</td>
+          <td>Docker</td>
+          <td>GitHub</td>
+          <td>Terraform</td>
+          <td>Scrum</td>
+        </tr>
+        <tr>
+          <td>JavaScript</td>
+          <td>Unity</td>
+          <td>Serverless Function</td>
+          <td>Azure DevOps (Pipelines)</td>
+          <td>Azure Boards</td>
+        </tr>
+        <tr>
+          <td>TypeScript</td>
+          <td>Django</td>
+          <td>Microsoft SQL Database</td>
+          <td>GitHub Actions</td>
+          <td>GitHub Projects</td>
+        </tr>
+        <tr>
+          <td>HTML / CSS</td>
+          <td>DotNet</td>
+          <td>Azure Blob Storage</td>
+          <td>Helm</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>SQL</td>
+          <td>Azure Data Studio</td>
+          <td>Virtual Machines</td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>MatLab</td>
+          <td>LabView</td>
+          <td>Postgres</td>
+          <td></td>
+          <td></td>
+        </tr>
+      </table>
+    </div>
+
+    <div id="experience">
       <h2>Experience</h2>
       <ul>
         <li>
           <h3>Junior Cloud Developer</h3>
           <h4>Righteous AI Inc.</h4>
           <h4>March 2022 - Present</h4>
-          <p>• Developed a self-service DevOps application for automated actuarial code deployment using C# and .NET Core, resulting in a reduction of deployment time by 50% and eliminating manual errors in the process.</p>
-          <p>• Designed and developed Python-based ETL pipelines for data processing and analysis for the Actuarial models, which used the new concept of configuration-as-code to allow for pipeline definition using YAML language. The ETL pipelines were flexible and reusable for handling Python pandas data and processing. It resulted in a significant increase in data processing efficiency and reduction in data errors.</p>
-          <p>• Implemented pytest framework for automated testing, resulting in a 40% reduction in manual testing efforts and increasing code coverage above 80%. This improved software quality, reduced the number of production defects, and enhanced overall code stability.</p>
-          <p>• Developed and maintained Docker images and containers in production environments to ensure scalability, availability, and performance. Developed Docker-based workflows for continuous integration and continuous deployment (CI/CD) pipelines, leading to a great improvement in scalability and a reduction in infrastructure costs.</p>
-          <p>• Created and deployed Kubernetes clusters and managed Kubernetes pods and services in production environments to ensure scalability, availability, and performance. Developed Kubernetes-based workflows for CI/CD pipelines, which resulted in a increase in application availability and a 75% reduction in deployment time.</p>
-          <p>• Developed custom VS Code extensions for productivity and collaboration tools and maintained web applications using Node.js. Developed and maintained web applications using modern front-end frameworks such as React and Vanilla JS. Developed and maintained scripts for website functionality and automation, leading to an increase in developer productivity and great improvements in collaboration efficiency.</p>
-          <p>• Developed and optimized databases for business and enterprise clients, designed and implemented complex database schemas and queries, and optimized database performance for large-scale data processing and analysis, resulting in an improvement in query performance and more than 90% reduction in database unused space.</p>
-          <p>• Developed and maintained cloud-based applications and services using Microsoft Azure services, integrated Azure services such as Azure Functions, Azure Blob Storage, and Azure AD into cloud-based applications for a financial services client and developed and maintained CI/CD pipelines using Azure DevOps for a software development team, resulting in a 50% reduction in operational costs and an increase in system reliability.</p>
-          <p>• Managed code repositories for collaborative software development for a team, implemented code review processes using Git pull requests, and developed and maintained Git workflows for CI/CD pipelines and software releases for a variety of projects. Managed code repositories for website hosting through GitHub pages service, which resulted in a significant reduction in software defects and a 20% improvement in overall code quality.</p>
+          <p>• Developed a self-service DevOps application for automated actuarial code deployment using C# and .NET
+            Core, resulting in a reduction of deployment time by 50% and eliminating manual errors in the process.</p>
+          <p>• Designed and developed Python-based ETL pipelines for data processing and analysis for the Actuarial
+            models, which used the new concept of configuration-as-code to allow for pipeline definition using YAML
+            language. The ETL pipelines were flexible and reusable for handling Python pandas data and processing. It
+            resulted in a significant increase in data processing efficiency and reduction in data errors.</p>
+          <p>• Implemented pytest framework for automated testing, resulting in a 40% reduction in manual testing
+            efforts and increasing code coverage above 80%. This improved software quality, reduced the number of
+            production defects, and enhanced overall code stability.</p>
+          <p>• Developed and maintained Docker images and containers in production environments to ensure scalability,
+            availability, and performance. Developed Docker-based workflows for continuous integration and continuous
+            deployment (CI/CD) pipelines, leading to a great improvement in scalability and a reduction in
+            infrastructure costs.</p>
+          <p>• Created and deployed Kubernetes clusters and managed Kubernetes pods and services in production
+            environments to ensure scalability, availability, and performance. Developed Kubernetes-based workflows for
+            CI/CD pipelines, which resulted in a increase in application availability and a 75% reduction in deployment
+            time.</p>
+          <p>• Developed custom VS Code extensions for productivity and collaboration tools and maintained web
+            applications using Node.js. Developed and maintained web applications using modern front-end frameworks such
+            as React and Vanilla JS. Developed and maintained scripts for website functionality and automation, leading
+            to an increase in developer productivity and great improvements in collaboration efficiency.</p>
+          <p>• Developed and optimized databases for business and enterprise clients, designed and implemented complex
+            database schemas and queries, and optimized database performance for large-scale data processing and
+            analysis, resulting in an improvement in query performance and more than 90% reduction in database unused
+            space.</p>
+          <p>• Developed and maintained cloud-based applications and services using Microsoft Azure services, integrated
+            Azure services such as Azure Functions, Azure Blob Storage, and Azure AD into cloud-based applications for a
+            financial services client and developed and maintained CI/CD pipelines using Azure DevOps for a software
+            development team, resulting in a 50% reduction in operational costs and an increase in system reliability.
+          </p>
+          <p>• Managed code repositories for collaborative software development for a team, implemented code review
+            processes using Git pull requests, and developed and maintained Git workflows for CI/CD pipelines and
+            software releases for a variety of projects. Managed code repositories for website hosting through GitHub
+            pages service, which resulted in a significant reduction in software defects and a 20% improvement in
+            overall code quality.</p>
         </li>
         <!-- Add more experience entries as needed -->
       </ul>
-    </section>
+    </div>
+  </div>
 
-    <section id="skills">
-      <h2>Skills</h2>
-      <ul>
-        <li>Skill 1</li>
-        <li>Skill 2</li>
-        <li>Skill 3</li>
-        <!-- Add more skills as needed -->
-      </ul>
-    </section>
-  </main>
-
-  <footer>
-    <p>Contact: maharshisuthar09@gmail.com</p>
-  </footer>
 </body>
+
+<script type="text/javascript" src="portfolio.js"></script>
 
 </html>
